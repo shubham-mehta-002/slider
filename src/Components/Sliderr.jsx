@@ -63,18 +63,18 @@ export function Sliderr() {
       element.addEventListener('mousemove', handleMouseMove);
       element.addEventListener('mouseup', handleMouseUp);
       element.addEventListener('mouseleave', handleMouseLeave);
-      currentBox.addEventListener('touchstart', handleDragStart);
-    currentBox.addEventListener('touchmove', handleDragging);
-    currentBox.addEventListener('touchend', handleDragStop);
+      element.addEventListener('touchstart', handleDragStart);
+    element.addEventListener('touchmove', handleDragging);
+    element.addEventListener('touchend', handleDragStop);
 
       return () => {
         element.removeEventListener('mousedown', handleMouseDown);
         element.removeEventListener('mousemove', handleMouseMove);
         element.removeEventListener('mouseup', handleMouseUp);
         element.removeEventListener('mouseleave', handleMouseLeave);
-        currentBox.removeEventListener('touchstart', handleDragStart);
-      currentBox.removeEventListener('touchmove', handleDragging);
-      currentBox.removeEventListener('touchend', handleDragStop);
+        element.removeEventListener('touchstart', handleDragStart);
+      element.removeEventListener('touchmove', handleDragging);
+      element.removeEventListener('touchend', handleDragStop);
       };
     }
   }, []);
