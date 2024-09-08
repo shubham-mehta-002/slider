@@ -2,77 +2,77 @@
     "id":1,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":100,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":2,
-    "title":"Wheat",
+    "title":"Rice",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":150,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":3,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":120,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":4,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":160,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":5,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":300,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":6,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":142,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":7,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":1230,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":8,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":123,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":9,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":100,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":10,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":100,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 },
 {
     "id":11,
     "title":"Wheat",
     "thumbnail":"https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg",
-    "price":"100",
+    "price":100,
     "description":"lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum lorem impsum "
 }
 ]

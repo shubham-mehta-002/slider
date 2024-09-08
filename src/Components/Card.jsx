@@ -2,7 +2,7 @@ import { CiHeart } from "react-icons/ci";
 
 export function Card({ thumbnail, title, description, price, id,  }) {
   return (
-    <div className={`card-wrapper w-full sm:h-80 sm:max-w-80 sm:min-w-19rem md:min-w-80 select-none border-2 flex flex-col rounded-md mx-2 bg-[#95d3b0] shadow-md shadow-slate-300`}>
+    <div className={`card-wrapper w-full sm:h-80 sm:max-w-80 sm:min-w-19rem md:min-w-80 select-none border-2 flex flex-col rounded-md mx-2 bg-[#afd3aa] shadow-md shadow-slate-300`}>
       <div className="image-container h-[60%]">
         <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="h-full w-full object-fill" />
       </div>
@@ -17,7 +17,7 @@ export function Card({ thumbnail, title, description, price, id,  }) {
       </div>
 
       <div className="h-[35%] line-clamp-2 overflow-hidden pl-2 text-xs sm:text-base">
-        {description}
+        <p className="leading-1">{description}</p>
       </div>
 
       <div className="h-[35%] flex flex-row justify-evenly items-center pl-2 py-1 sm:pb-0">
