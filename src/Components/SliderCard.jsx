@@ -6,7 +6,7 @@ export function SliderCard({ thumbnail, title, description, price, id,  }) {
   return (
     <div className={`card-wrapper min-w-[200px] max-w-[200px]  sm:h-80 max-h-76 sm:max-w-[290px] sm:min-w-[290px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10`}>
       <div className="image-container h-[60%]">
-        <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="rounded-t-md h-full w-full object-fill" />
+        <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="rounded-t-md h-full w-full object-fill" /> 
       </div>
 
       <div className="flex flex-row h-[10%] w-full justify-between">
