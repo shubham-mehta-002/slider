@@ -1,6 +1,7 @@
 import { Card } from "./Card";
 import data from "../../data.json";
 import { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 export function Sliderr() {
   const box = useRef(null);
@@ -130,6 +131,10 @@ export function Sliderr() {
       >
         &gt;
       </button>
+
+
+
+      <span><NavLink to='/products'></NavLink></span>
     </div>
   );
 }
