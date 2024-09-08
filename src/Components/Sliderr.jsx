@@ -57,24 +57,51 @@ export function Sliderr() {
       }
     };
 
+    const handleTouchStart = (e) => {
+      if (box.current) {
+        isDragging.current = true;
+        startX.current = e.touches[0].pageX - box.current.offsetLeft;
+        scrollLeft.current = box.current.scrollLeft;
+        box.current.style.cursor = 'grabbing';
+      }
+    };
+
+    const handleTouchMove = (e) => {
+      if (isDragging.current && box.current) {
+        e.preventDefault();
+        const x = e.touches[0].pageX - box.current.offsetLeft;
+        const walk = (x - startX.current) * 1.5; // Adjust multiplier for sensitivity
+        box.current.scrollLeft = scrollLeft.current - walk;
+      }
+    };
+
+    const handleTouchEnd = () => {
+      if (isDragging.current) {
+        isDragging.current = false;
+        if (box.current) {
+          box.current.style.cursor = 'grab'; // Reset cursor style
+        }
+      }
+    };
+
     const element = box.current;
     if (element) {
       element.addEventListener('mousedown', handleMouseDown);
       element.addEventListener('mousemove', handleMouseMove);
       element.addEventListener('mouseup', handleMouseUp);
       element.addEventListener('mouseleave', handleMouseLeave);
-      element.addEventListener('touchstart', handleDragStart);
-    element.addEventListener('touchmove', handleDragging);
-    element.addEventListener('touchend', handleDragStop);
+      element.addEventListener('touchstart', handleTouchStart);
+      element.addEventListener('touchmove', handleTouchMove);
+      element.addEventListener('touchend', handleTouchEnd);
 
       return () => {
         element.removeEventListener('mousedown', handleMouseDown);
         element.removeEventListener('mousemove', handleMouseMove);
         element.removeEventListener('mouseup', handleMouseUp);
         element.removeEventListener('mouseleave', handleMouseLeave);
-        element.removeEventListener('touchstart', handleDragStart);
-      element.removeEventListener('touchmove', handleDragging);
-      element.removeEventListener('touchend', handleDragStop);
+        element.removeEventListener('touchstart', handleTouchStart);
+        element.removeEventListener('touchmove', handleTouchMove);
+        element.removeEventListener('touchend', handleTouchEnd);
       };
     }
   }, []);
