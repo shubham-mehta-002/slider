@@ -1,10 +1,32 @@
 import { useState } from 'react'
-import { Sliderr } from './Components/Sliderr'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+import { Sliderr } from './Components/Sliderr.jsx';
+import { ProductPage } from './Pages/ProductPage.jsx';
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Sliderr />,
+  },
+  {
+    path: "/products",
+    element: <ProductPage />,
+  },
+  {
+    path: "/home",
+    element: <Sliderr />,
+  },
+]);
 
 function App() {
   return (
-    <div className='pt-20'>
-      <Sliderr />
+    <div>
+       <RouterProvider router={routes} ></RouterProvider>
     </div>
   )
 }

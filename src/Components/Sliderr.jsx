@@ -107,7 +107,7 @@ export function Sliderr() {
   }, []);
 
   return (
-    <div className="card-container flex flex-row mx-1 items-center justify-center">
+    <div className="card-container flex flex-row mx-1 items-center justify-center mt-20">
       <button
         type="button"
         onClick={prevContentHandler}
