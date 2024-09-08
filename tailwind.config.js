@@ -6,9 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      'vsm':'450px'
+      'vsm':'450px',
+      height: {
+        '76': '19.5rem', 
+      },
     },
   },
   plugins: [],
 }
+
 

@@ -4,7 +4,7 @@ import { HiArrowsRightLeft } from "react-icons/hi2";
 
 export function ProductCard({ thumbnail, title, description, price, id,  }) {
   return (
-    <div className={`card-wrapper min-w-60 max-w-60 h-60 sm:h-[280px] sm:max-w-[280px]  sm:min-w-[280px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10`}>
+    <div className={`card-wrapper min-w-40 max-w-60 h-56 sm:h-[280px] sm:max-w-[280px]  sm:min-w-[280px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-5`}>
       <div className="image-container h-[60%]">
         <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="rounded-t-md h-full w-full object-fill" />
       </div>
@@ -24,11 +24,11 @@ export function ProductCard({ thumbnail, title, description, price, id,  }) {
       </div>
 
       <div className="h-[35%] flex flex-row justify-evenly items-center pl-2 py-1 sm:pb-0">
-        <button type="button" className=" border-[1px] border-green-700  py-1 px-5 sm:py-[5px] sm:px-10 rounded-md text-[#00b300] font-semibold text-[10px] sm:text-xs  flex items-center justify-center underline">
+        <button type="button" className=" py-[2px] px-[17px] border-[1px] border-green-700  sm:py-[5px] sm:px-10 rounded-md text-[#00b300] font-semibold text-[10px] sm:text-xs  flex items-center justify-center underline">
           ${price}
         </button>
 
-        <button type="button" className="py-1 px-5 sm:py-[5px] sm:px-10 rounded-md border-[1px] border-green-600 bg-[#008000] font-medium text-white text-xs flex items-center justify-center">
+        <button type="button" className="py-[2px] px-[17px] sm:py-[5px] sm:px-10 rounded-md border-[1px] border-green-600 bg-[#008000] font-medium text-white text-[10px] sm:text-xs flex items-center justify-center">
           Add
         </button>
       </div>
