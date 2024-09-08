@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import data from "../../data.json";
-import { Card } from "../Components/Card";
+import { ProductCard } from "../Components/ProductCard";
 import { CiSearch } from "react-icons/ci";
 
 export function ProductPage() {
@@ -96,13 +96,13 @@ export function ProductPage() {
 
       {/* products list */}
       <div className="w-[95%] mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-2 sm:gap-4">
           {products.map((product) => (
             <div
               key={product.id}
               className="w-full flex justify-center items-center"
             >
-              <Card {...product} />
+              <ProductCard {...product} />
             </div>
           ))}
         </div>

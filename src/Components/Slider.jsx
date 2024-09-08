@@ -1,9 +1,9 @@
-import { Card } from "./Card";
+import { SliderCard } from "./SliderCard";
 import data from "../../data.json";
 import { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
-export function Sliderr() {
+export function Slider() {
   const box = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -121,7 +121,7 @@ export function Sliderr() {
         className="slider items-center flex-row flex overflow-x-hidden scroll-smooth cursor-grab"
       >
         {data.map((dataObj, index) => (
-          <Card key={index} {...dataObj} />
+          <SliderCard key={index} {...dataObj} />
         ))}
       </div>
       <button

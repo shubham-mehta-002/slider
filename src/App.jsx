@@ -5,13 +5,13 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { Sliderr } from './Components/Sliderr.jsx';
+import { Slider } from './Components/Slider.jsx';
 import { ProductPage } from './Pages/ProductPage.jsx';
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Sliderr />,
+    element: <Slider />,
   },
   {
     path: "/products",
@@ -19,7 +19,7 @@ const routes = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Sliderr />,
+    element: <Slider />,
   },
 ]);
 
