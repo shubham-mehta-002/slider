@@ -318,7 +318,7 @@
 //         const walk = (x - startX.current) * 1.5; // Adjust multiplier for sensitivity
 //         box.current.scrollLeft = scrollLeft.current - walk;
 //       }
-    
+
 //     };
 
 //     const handleMouseUp = () => {
@@ -337,7 +337,7 @@
 //           box.current.style.cursor = "grab"; // Reset cursor style
 //         }
 //       }
-  
+
 //     };
 
 //     const handleTouchStart = (e) => {
@@ -349,15 +349,13 @@
 //       }
 //     };
 
-   
-
 //     const handleTouchMove = (e) => {
 //       if (isDragging.current && box.current) {
 //         e.preventDefault();
 //         const x = e.touches[0].pageX - box.current.offsetLeft;
 //         const walk = (x - startX.current) * 1.5; // Adjust multiplier for sensitivity
 //         box.current.scrollLeft = scrollLeft.current - walk;
-               
+
 //       }
 //     };
 
@@ -449,11 +447,11 @@ export function Slider() {
   }
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     nextArrow: <Arrow />,
     prevArrow: <Arrow />,
     responsive: [
@@ -465,36 +463,37 @@ export function Slider() {
         },
       },
       {
-        breakpoint: 710,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 500,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow:1,
+          slidesToScroll: 1,
+        },
+      },
+      // {
+      //   breakpoint: 500,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //   },
+      // },
     ],
   };
   return (
     <div className="w-[100vw] h-[100vh]  flex justify-center items-center">
-
-     <div className=" w-[80vw] gap-2">
-     <Slider1 {...settings}>
-      {data.map((dataObj, index) => (
-          <SliderCard key={index} {...dataObj} />
-        ))}  
-              </Slider1>
+      <div className=" w-[80vw] gap-2">
+        <Slider1 {...settings}>
+          {data.map((dataObj, index) => (
+            <SliderCard key={index} {...dataObj} />
+          ))}
+        </Slider1>
       </div>
-     
-      <span>
-
-        <NavLink to="/products"></NavLink>
-      </span>
-    </div>
-  );
+    </div>
+  );
 }
