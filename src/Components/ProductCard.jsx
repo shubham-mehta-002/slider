@@ -11,7 +11,7 @@ export function ProductCard({ thumbnail, title, description, price, id,  }) {
 
       <div className="flex flex-row h-[10%] w-full justify-between">
         {/* <div className="w-3/4 font-semibold text-sm vsm:sm-base sm:text-xl pl-2">{title}_{id}</div> */}
-        <div className="w-2/3 font-medium text-[15px] sm:text-[19px] pl-2 mt-1 tracking-tight">{title}</div>
+        <div className="w-2/3 font-medium text-[15px] sm:text-[19px] pl-2 mt-1 tracking-tight line-clamp-1">{title}</div>
         <div className="w-1/3 flex flex-row justify-evenly items-center ">
           <CiHeart className="hover:cursor-pointer sm:size-[20px]" />
           <HiArrowsRightLeft className="hover:cursor-pointer sm:size-[20px]" />
@@ -20,15 +20,15 @@ export function ProductCard({ thumbnail, title, description, price, id,  }) {
       </div>
 
       <div className="h-[35%]  pl-2 text-sm text-[#4c5353] mt-1">
-        <p className="leading-1 line-clamp-2 tracking-tight sm:tracking-normal leading-4 text-[12px] sm:text-[15px]">{description}</p>
+        <p className="leading-1 line-clamp-2 tracking-tight sm:tracking-normal leading-4 text-[12px] sm:text-[14px]">{description}</p>
       </div>
 
-      <div className="h-[35%] flex flex-row justify-evenly items-center pl-2 py-1 sm:pb-0">
-        <button type="button" className=" py-[2px] px-[17px] border-[1px] border-green-700  sm:py-[5px] sm:px-10 rounded-md text-[#00b300] font-semibold text-[10px] sm:text-xs  flex items-center justify-center underline">
+      <div className="h-[35%] flex flex-row justify-evenly items-center pl-2 pb-1 sm:pb-0">
+        <button type="button" className=" py-[2px] px-[17px] border-[1px] border-green-700  sm:py-[4px] sm:px-10 rounded-md text-[#00b300] font-semibold text-[8px] sm:text-xs  flex items-center justify-center underline">
           ${price}
         </button>
 
-        <button type="button" className="py-[2px] px-[17px] sm:py-[5px] sm:px-10 rounded-md border-[1px] border-green-600 bg-[#008000] font-medium text-white text-[10px] sm:text-xs flex items-center justify-center">
+        <button type="button" className="py-[2px] px-[17px] sm:py-[4px] sm:px-10 rounded-md border-[1px] border-green-600 bg-[#008000] font-medium text-white text-[8px] sm:text-xs flex items-center justify-center">
           Add
         </button>
       </div>

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Slider } from './Components/Slider.jsx';
 import { ProductPage } from './Pages/ProductPage.jsx';
+import { ProductDescription } from './Pages/ProductDescription.jsx';
 
 const routes = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const routes = createBrowserRouter([
   {
     path: "/products",
     element: <ProductPage />,
+  },
+  {
+    path: "/products/:productId",
+    element: <ProductDescription />,
   },
   {
     path: "/home",

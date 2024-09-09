@@ -37,9 +37,10 @@ export function Filters({ searchInput, products, setProducts, setSearchInput }) 
     }, [searchInput, minPrice, maxPrice, data]);
   
     return (
-      <div className="filter w-full flex flex-row gap-10">
-        <div className="w-[40]">
-          <label className="block mb-1 text-green-800 font-semibold">
+      <div className="filter-container w-full ">
+        <div className='filters-wrapper border-2 w-fit mx-auto flex flex-col sm:flex-row sm:gap-10'>
+        <div className="minPrice-filter w-28 sm:w-52 lg:w-60">
+          <label className="block mb-1 text-green-800 text-sm sm:text-base font-semibold ">
             Min Price: ${minPrice}
           </label>
           <input
@@ -51,8 +52,9 @@ export function Filters({ searchInput, products, setProducts, setSearchInput }) 
             className="w-full hover:cursor-pointer"
           />
         </div>
-        <div className="w-[40]">
-          <label className="block mb-1">Max Price: ${maxPrice}</label>
+        <div className="maxPrice-filter w-28 sm:w-52 lg:w-60">
+          <label className="block mb-1 text-green-800 text-sm sm:text-base font-semibold">
+            Max Price: ${maxPrice}</label>
           <input
             type="range"
             value={maxPrice}
@@ -61,6 +63,7 @@ export function Filters({ searchInput, products, setProducts, setSearchInput }) 
             max={maxPriceAvailable}
             className="w-full hover:cursor-pointer"
           />
+        </div>
         </div>
       </div>
     );

@@ -12,7 +12,7 @@ export function ProductPage() {
       {/* header */}
       <header className="text-4xl mb-5">
         <span className="text-gray-500">Search Your</span>{" "}
-        <span className="font-bold text-green-500">Stubble</span>
+        <span className="font-bold text-green-600">Stubble</span>
       </header>
 
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
