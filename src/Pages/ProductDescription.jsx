@@ -87,8 +87,8 @@ export function ProductDescription() {
         />
       </div>
 
-      <div className="w-full md:w-[60%] p-4 ">
-        {/* description */}
+      <div className="w-full md:w-[60%] px-4 py-2 sm:p-4 ">
+        {/* title and description */}
         <div className="w-full flex flex-col gap-2   ">
           <div className="title text-3xl sm:text-4xl md:text-5xl font-semibold mt-5">
             {product.title}
