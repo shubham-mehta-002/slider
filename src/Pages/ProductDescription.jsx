@@ -83,7 +83,7 @@ export function ProductDescription() {
         <img
           src={product.thumbnail}
           alt={product.title}
-          className="h-[40vh] sm:h-[300px] aspect-square  w-full md:w-[400px] sm:mt-10 xl:w-[85%] sm:rounded-t-md rounded-b-xl md:rounded-xl md:shadow-lg md:shadow-slate-300 sm:sticky sm:top-10"
+          className="h-[40vh] sm:h-[300px] aspect-square  w-full md:w-[400px] sm:mt-10 xl:w-[85%] sm:rounded-t-md md:rounded-xl md:shadow-lg md:shadow-slate-300 sm:sticky sm:top-10"
         />
       </div>
 
