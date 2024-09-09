@@ -425,7 +425,7 @@
 import { SliderCard } from "./SliderCard";
 import data from "../../data.json";
 import { useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider1 from "react-slick";
@@ -486,13 +486,19 @@ export function Slider() {
     ],
   };
   return (
-    <div className="w-[100vw] h-[100vh]  flex justify-center items-center">
+    <div className="w-[100vw] h-[100vh]  flex flex-col justify-center items-center">
       <div className=" w-[80vw] gap-2">
         <Slider1 {...settings}>
           {data.map((dataObj, index) => (
             <SliderCard key={index} {...dataObj} />
           ))}
         </Slider1>
+      </div>
+
+
+      <div className="mt-10 h-[100px]">
+          <Link to="/products" className="mr-3 ">All Products</Link>
+          <Link to="/products/1">Product 1</Link>
       </div>
     </div>
   );

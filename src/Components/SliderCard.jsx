@@ -78,7 +78,7 @@ import { HiArrowsRightLeft } from "react-icons/hi2";
 export function SliderCard({ thumbnail, title, description, price, id }) {
   return (
     // <div className={`card-wrapper min-w-[200px] max-w-[200px]  max-h-64  max-h-76 sm:max-w-[250px] sm:min-w-[250px] sm:h-72 md:h-80 md:max-w-[260px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10`}>
-      <div className={`card-wrapper h-[250px] w-56 sm:h-[270px] sm:w-60 md:h-[320px] md:w-72 select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10 mx-auto`}>
+      <div className={`card-wrapper h-[250px] w-56 sm:h-[270px] sm:w-60 md:h-[320px] md:w-72 select-none flex flex-col rounded-md bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10 mx-auto`}>
       <div className="image-container h-[60%]">
         <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="rounded-t-md h-full w-full object-fill" /> 
       </div>

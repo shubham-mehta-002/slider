@@ -4,7 +4,9 @@ import { HiArrowsRightLeft } from "react-icons/hi2";
 
 export function ProductCard({ thumbnail, title, description, price, id,  }) {
   return (
-    <div className={`card-wrapper min-w-40 max-w-60 h-56 sm:h-[280px] sm:max-w-[280px]  sm:min-w-[280px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-5`}>
+    // <div className={`card-wrapper min-w-40 max-w-60 h-56 sm:h-[280px] sm:max-w-[280px]  sm:min-w-[280px] select-none flex flex-col rounded-md mx-2 bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-5`}>
+    <div className={`card-wrapper h-[220px] w-52 sm:h-[270px] sm:w-60 md:h-[320px] md:w-72 select-none flex flex-col rounded-md bg-[hsl(110,42%,81%)] shadow-lg shadow-slate-300 mb-10 mx-auto`}>
+     
       <div className="image-container h-[60%]">
         <img src={thumbnail} alt="img" draggable="false" loading="lazy" className="rounded-t-md h-full w-full object-fill" />
       </div>
