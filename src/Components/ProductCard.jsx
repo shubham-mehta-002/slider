@@ -13,7 +13,7 @@ export function ProductCard({ thumbnail, title, description, price, id,  }) {
 
       <div className="flex flex-row h-[10%] w-full justify-between">
         {/* <div className="w-3/4 font-semibold text-sm vsm:sm-base sm:text-xl pl-2">{title}_{id}</div> */}
-        <div className="w-2/3 font-medium text-[15px] sm:text-[19px] pl-2 mt-1 tracking-tight line-clamp-1">{title}</div>
+        <div className="w-2/3 font-medium text-[15px] sm:text-[19px] pl-2 mt-1 tracking-tight line-clamp-1">{id}</div>
         <div className="w-1/3 flex flex-row justify-evenly items-center ">
           <CiHeart className="hover:cursor-pointer sm:size-[20px]" />
           <HiArrowsRightLeft className="hover:cursor-pointer sm:size-[20px]" />
