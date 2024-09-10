@@ -11,6 +11,10 @@ export function ProductPage() {
   const [maxPrice, setMaxPrice] = useState(0);
   const [totalProducts , setTotalProducts] = useState(0)
 
+  useEffect(()=>{
+    setPage(1)
+  },[searchInput,maxPrice,minPrice])
+
   useEffect(() => {
     // Filter products based on searchInput,
     let filteredProducts = data.filter((product) =>
